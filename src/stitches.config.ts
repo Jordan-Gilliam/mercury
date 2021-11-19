@@ -1,4 +1,7 @@
+// @ts-nocheck
+// const { createStitches } = require('@stitches/react');
 import { createStitches } from '@stitches/react';
+
 import {
   gray,
   mauve,
@@ -116,6 +119,7 @@ import {
   goldDarkA,
 } from '@radix-ui/colors';
 import type * as Stitches from '@stitches/react';
+import type {CreateStitches} from '@stitches/react';
 export type { VariantProps } from '@stitches/react';
 
 export const {
@@ -127,7 +131,7 @@ export const {
   globalCss,
   keyframes,
   config,
-} = createStitches({
+} = createStitches<CreateStitches>({
   theme: {
     colors: {
       ...gray,
@@ -331,7 +335,7 @@ export const {
     }),
     as: (value: Stitches.PropertyValue<'alignSelf'>) => ({ alignSelf: value }),
     fg: (value: Stitches.PropertyValue<'flexGrow'>) => ({ flexGrow: value }),
-    fs: (value: Stitches.PropertyValue<'flexShrink'>) => ({
+    fsh: (value: Stitches.PropertyValue<'flexShrink'>) => ({
       flexShrink: value,
     }),
     fb: (value: Stitches.PropertyValue<'flexBasis'>) => ({ flexBasis: value }),
@@ -381,6 +385,10 @@ export const {
     size: (value: Stitches.PropertyValue<'width'>) => ({
       width: value,
       height: value,
+    }),
+
+    fs: (value: Stitches.PropertyValue<'fontSize'>) => ({
+      fontSize: value,
     }),
 
     appearance: (value: Stitches.PropertyValue<'appearance'>) => ({
