@@ -19,15 +19,13 @@ const meta: Meta = {
 
 export default meta;
 
-const Texts: Story = (args) => (
+const Texts: Story = args => (
   <>
     <Text
       size="9"
       as="h1"
-      variant="purple"
-      gradient
       css={{
-        fontWeight: 500,
+        fontWeight: 700,
         lineHeight: '68px',
         WebkitBackgroundClip: 'text',
       }}
@@ -37,8 +35,6 @@ const Texts: Story = (args) => (
     <Text
       size="8"
       as="h2"
-      variant="bronze"
-      gradient
       css={{
         fontWeight: 500,
         lineHeight: '68px',
@@ -50,8 +46,6 @@ const Texts: Story = (args) => (
     <Text
       size="7"
       as="h3"
-      variant="indigo"
-      gradient
       css={{
         fontWeight: 500,
         lineHeight: '68px',
@@ -63,8 +57,6 @@ const Texts: Story = (args) => (
     <Text
       size="3"
       as="p"
-      variant="gray"
-      gradient
       css={{
         fontWeight: 500,
         lineHeight: '68px',
