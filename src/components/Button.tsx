@@ -1,12 +1,12 @@
 import { styled } from '../stitches.config';
 
-export const Button = styled('button', {
+const Button = styled('button', {
   br: '$pill',
   p: '$2 $3',
-  bg: 'white',
+  bc: 'white',
   fontFamily: '$mono',
   border: 'none',
-  boxShadow:
+  bs:
     '-15px 0 30px -10px var(--colors-orangeA7), 0 0 30px -10px var(--colors-pinkA7), 15px 0 30px -10px var(--colors-violetA7);',
 
   variants: {
@@ -14,14 +14,12 @@ export const Button = styled('button', {
       small: {
         fontSize: '$2',
         height: '$3',
-        paddingRight: '10px',
-        paddingLeft: '10px',
+        px: '$2',
       },
       large: {
-        fontSize: '$5',
+        fontSize: '$3',
         height: '$6',
-        paddingLeft: '15px',
-        paddingRight: '15px',
+        px: '$3',
       },
     },
     color: {
@@ -29,7 +27,7 @@ export const Button = styled('button', {
         backgroundColor: 'white',
         color: 'black',
         '&:hover': {
-          boxShadow:
+          bs:
             '-15px 0 30px -10px var(--colors-orangeA8), 0 0 30px -10px var(--colors-pinkA8), 15px 0 30px -10px var(--colors-violetA8)',
           color: 'black',
         },
@@ -37,3 +35,5 @@ export const Button = styled('button', {
     },
   },
 });
+
+export { Button };
