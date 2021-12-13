@@ -18,7 +18,6 @@ export { Card } from './components/Card';
 export { Button } from './components/Button';
 export { Flex } from './components/Flex';
 export { Grid } from './components/Grid';
-export { Heading } from './components/Heading';
 export { Text } from './components/Text';
 export { Container } from './components/Container';
 export { DesignSystemProvider } from './components/DesignSystemProvider';

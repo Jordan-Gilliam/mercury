@@ -1,7 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Card } from '../src/components/Card';
-import { Heading } from '../src/components/Heading';
 import { Text } from '../src/components/Text';
 import { Flex } from '../src/components/Flex';
 import { Box } from '../src/components/Box';
@@ -24,10 +23,12 @@ const meta: Meta = {
 
 export default meta;
 
-const BaseCard: Story = args => (
+const BaseCard: Story = (args) => (
   <Box css={{ width: 250 }}>
     <Card css={{ p: '$3' }}>
-      <Heading css={{ mb: '$2' }}>Developer Productivity</Heading>
+      <Text size="2" as="h2" css={{ mb: '$2' }}>
+        Developer Productivity
+      </Text>
       <Text size="3" css={{ color: '$slate11', lineHeight: '23px' }}>
         List of software, shortcuts, and tooling that I simply cannot live
         without
@@ -40,10 +41,12 @@ const BaseCard: Story = args => (
   </Box>
 );
 
-const HoverCard: Story = args => (
+const HoverCard: Story = (args) => (
   <Box css={{ width: 250 }}>
     <Card variant="hover" css={{ p: '$3' }}>
-      <Heading css={{ mb: '$2' }}>Developer Productivity</Heading>
+      <Text size="2" css={{ mb: '$2' }}>
+        Developer Productivity
+      </Text>
       <Text size="3" css={{ color: '$slate11', lineHeight: '23px' }}>
         List of software, shortcuts, and tooling that I simply cannot live
         without
@@ -56,10 +59,12 @@ const HoverCard: Story = args => (
   </Box>
 );
 
-const TransparentCard: Story = args => (
+const TransparentCard: Story = (args) => (
   <Box css={{ width: 250 }}>
     <Card variant="transparent" css={{ p: '$3' }}>
-      <Heading css={{ mb: '$2' }}>Developer Productivity</Heading>
+      <Text size="2" css={{ mb: '$2' }}>
+        Developer Productivity
+      </Text>
       <Text size="3" css={{ color: '$slate11', lineHeight: '23px' }}>
         List of software, shortcuts, and tooling that I simply cannot live
         without
